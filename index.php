@@ -33,7 +33,9 @@ $female = get_count($conn,'female');
 		</div>
 	</div>
 	<button type="button" class="btn btn-warning">
-	<a href="fpdf.php" target="_blank">PDF</a>
+	<a href="fpdf.php" style="text-decoration:none">Generate PDF</a></button>
+	<button type="button" class="btn btn-warning">
+	<a href="excel.php" style="text-decoration:none">Export to Excel</a>
     </button>
 	</div>
 

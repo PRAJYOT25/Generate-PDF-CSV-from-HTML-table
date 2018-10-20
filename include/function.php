@@ -2,7 +2,7 @@
 function fetch_data($conn)
 {
 	$output= "";
-	$q="SELECT empName,position,salary,age,sex FROM `employee`";
+	$q="SELECT empName,position,salary,age,sex FROM employee";
 	$r=mysqli_query($conn,$q);
 	$numrows=mysqli_num_rows($r);
 	if($numrows>0)

@@ -84,12 +84,5 @@
 	$content .= fetch_data($conn);  
 	$content .= '</table>';  
 	$pdf->writeHTML($content);  
-
-		//$obj_pdf->Text(105, 65, 'BLUE');
-		// $obj_pdf->Text(155, 35, 'GREEN');
-		// $obj_pdf->Text(160, 55, 'RED');
-
-		$pdf->Output('sample.pdf', 'I');
-$pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'color'=>array(196,196,196), 'opacity'=>1, 'blend_mode'=>'Normal'));
-$pdf->Output('example_001.pdf', 'I');
+		$pdf->Output('sample.pdf', 'D');
 ?>
