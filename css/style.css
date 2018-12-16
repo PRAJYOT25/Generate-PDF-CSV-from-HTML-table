@@ -1,0 +1,23 @@
+body
+{
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.right
+{
+	float:right;
+}
+#example
+{
+	width:100%;
+}
+.btn
+{
+	  background-image: radial-gradient(#3E87ED, #2866BE, #3073D0);	 
+}
+.btn a
+{
+	 color:#ffffff;
+	 text-decoration:none;
+
+}

@@ -10,10 +10,21 @@ $female = get_count($conn,'female');
 <html lang="en">
 <?php include('header.php');?>
 <body>
+<h4 class="text-center pt-2">Export Data to PDF & Excel</h4>
 <div class="container">
+	<div class="row pb-2">
+		<div class="offset-sm-8 col-sm-4">
+			<button type="button" class="btn btn-primary">
+			<a href="fpdf.php">Generate PDF</a></button>
+			<span class="p-2"></span>
+			<button type="button" class="btn btn-primary">
+			<a href="excel.php">Export to Excel</a>
+			</button>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-sm-9">
-			<table id="example" class="table table-striped table-responsive-sm table-bordered" style="width:100%">
+			<table id="example" class="table table-striped table-responsive-sm table-bordered">
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -32,11 +43,6 @@ $female = get_count($conn,'female');
 			<div id="piechart"></div>
 		</div>
 	</div>
-	<button type="button" class="btn btn-warning">
-	<a href="fpdf.php" style="text-decoration:none">Generate PDF</a></button>
-	<button type="button" class="btn btn-warning">
-	<a href="excel.php" style="text-decoration:none">Export to Excel</a>
-    </button>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -63,7 +69,7 @@ $female = get_count($conn,'female');
 	]);
 			  var options = {
 			  pieStartAngle: 0,
-
+              'is3D':true,
 			  width:300,
 			  height:250,
 			  slices: {
